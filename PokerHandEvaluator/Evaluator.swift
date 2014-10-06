@@ -37,11 +37,12 @@ class Deck {
             "A":["index":12, "prime": 41]]
         for face in faces.keys{
             for suit in suitDetails.keys {
-                let faceValue = faces[face]!["index"]!
-                let prime = faces[face]!["prime"]!
+                let faceIndex = faces[face]!["index"]!
+                let faceValue = faceIndex << 8
                 let suitValue = suitDetails[suit]! << 12
-                let rank = 1 << (faceValue + 16)
-                cards[face+suit] = prime | (faceValue << 8) | suitValue | rank
+                let facePrime = faces[face]!["prime"]!
+                let rank = 1 << (faceIndex + 16)
+                cards[face+suit] = rank | suitValue | faceValue | facePrime
             }
         }
     }
