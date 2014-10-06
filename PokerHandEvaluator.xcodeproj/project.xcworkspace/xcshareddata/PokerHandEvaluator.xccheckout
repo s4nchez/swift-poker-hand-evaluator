@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>972BBC1E-44F2-494E-AB86-3744580AE95A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>PokerHandEvaluator</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7196E502C2BE614684948F67F22168F67C791849</key>
+		<string>github.com:s4nchez/swift-poker-hand-evaluator.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>PokerHandEvaluator.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7196E502C2BE614684948F67F22168F67C791849</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:s4nchez/swift-poker-hand-evaluator.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7196E502C2BE614684948F67F22168F67C791849</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7196E502C2BE614684948F67F22168F67C791849</string>
+			<key>IDESourceControlWCCName</key>
+			<string>PokerHandEvaluator</string>
+		</dict>
+	</array>
+</dict>
+</plist>

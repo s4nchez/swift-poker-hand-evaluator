@@ -9,7 +9,10 @@
 /* Begin PBXBuildFile section */
 		2B468D2E19E2851A00E92B5B /* Evaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B468D2D19E2851A00E92B5B /* Evaluator.swift */; };
 		2B468D2F19E2851A00E92B5B /* Evaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B468D2D19E2851A00E92B5B /* Evaluator.swift */; };
-		2B468D3219E2856300E92B5B /* EvaluatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B468D3019E2856300E92B5B /* EvaluatorTest.swift */; };
+		2B468D3C19E2AA0900E92B5B /* Evaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B468D3819E2AA0900E92B5B /* Evaluator.swift */; };
+		2B5974CF19E2F5180088F477 /* EvaluatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B468D3019E2856300E92B5B /* EvaluatorTest.swift */; };
+		2B5974D319E2F9A70088F477 /* Lookups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5974D219E2F9A70088F477 /* Lookups.swift */; };
+		2B5974D419E2FAA90088F477 /* Lookups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5974D219E2F9A70088F477 /* Lookups.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +35,10 @@
 		2B468D2C19E2851A00E92B5B /* PokerHandEvaluatorTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PokerHandEvaluatorTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		2B468D2D19E2851A00E92B5B /* Evaluator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Evaluator.swift; sourceTree = "<group>"; };
 		2B468D3019E2856300E92B5B /* EvaluatorTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EvaluatorTest.swift; sourceTree = "<group>"; };
+		2B468D3819E2AA0900E92B5B /* Evaluator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Evaluator.swift; sourceTree = "<group>"; };
+		2B468D3A19E2AA0900E92B5B /* PokerHandEvaluator-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PokerHandEvaluator-Bridging-Header.h"; sourceTree = "<group>"; };
+		2B468D3B19E2AA0900E92B5B /* PokerHandEvaluatorTests-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PokerHandEvaluatorTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		2B5974D219E2F9A70088F477 /* Lookups.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lookups.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +83,8 @@
 				2B468D2D19E2851A00E92B5B /* Evaluator.swift */,
 				2B468D2B19E2851A00E92B5B /* PokerHandEvaluator-Bridging-Header.h */,
 				2B468D2C19E2851A00E92B5B /* PokerHandEvaluatorTests-Bridging-Header.h */,
+				2B468D3719E2AA0900E92B5B /* PokerHandEvaluator */,
+				2B5974D219E2F9A70088F477 /* Lookups.swift */,
 			);
 			path = PokerHandEvaluator;
 			sourceTree = "<group>";
@@ -95,6 +104,16 @@
 				2B468D2219E284D700E92B5B /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2B468D3719E2AA0900E92B5B /* PokerHandEvaluator */ = {
+			isa = PBXGroup;
+			children = (
+				2B468D3819E2AA0900E92B5B /* Evaluator.swift */,
+				2B468D3A19E2AA0900E92B5B /* PokerHandEvaluator-Bridging-Header.h */,
+				2B468D3B19E2AA0900E92B5B /* PokerHandEvaluatorTests-Bridging-Header.h */,
+			);
+			name = PokerHandEvaluator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +204,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B468D2E19E2851A00E92B5B /* Evaluator.swift in Sources */,
+				2B5974D319E2F9A70088F477 /* Lookups.swift in Sources */,
+				2B468D3C19E2AA0900E92B5B /* Evaluator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,8 +213,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B5974CF19E2F5180088F477 /* EvaluatorTest.swift in Sources */,
+				2B5974D419E2FAA90088F477 /* Lookups.swift in Sources */,
 				2B468D2F19E2851A00E92B5B /* Evaluator.swift in Sources */,
-				2B468D3219E2856300E92B5B /* EvaluatorTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +304,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "PokerHandEvaluator/PokerHandEvaluator-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -295,6 +318,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "PokerHandEvaluator/PokerHandEvaluator-Bridging-Header.h";
 			};
 			name = Release;
@@ -353,6 +377,7 @@
 				2B468D2719E284D700E92B5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2B468D2819E284D700E92B5B /* Build configuration list for PBXNativeTarget "PokerHandEvaluatorTests" */ = {
 			isa = XCConfigurationList;
@@ -361,6 +386,7 @@
 				2B468D2A19E284D700E92B5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

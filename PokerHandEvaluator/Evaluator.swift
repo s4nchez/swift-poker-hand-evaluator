@@ -64,3 +64,47 @@ class Deck {
         return cards[card]!
     }
 }
+
+enum RankName{
+    case HighCard
+    case OnePair
+    case TwoPair
+    case ThreeOfAKind
+    case Straight
+    case Flush
+    case FullHouse
+    case FourOfAKind
+    case StraightFlush
+}
+
+private enum RankHighest{}
+
+class HandRank: Equatable {
+    var rank:Int
+    var name:RankName
+    init(rank:Int) {
+        self.rank = rank
+        self.name = RankName.StraightFlush
+    }
+}
+
+func == (lhs: HandRank, rhs: HandRank) -> Bool {
+    return lhs.rank == rhs.rank
+}
+
+class Evaluator {
+    var deck = Deck()
+    
+     enum Test {}
+
+    func evaluate(cards:[String]) -> HandRank {
+        let cardValues = cards.map {
+            (var card) -> Int in
+            return self.deck.as_binary(card)
+        }
+        
+        let handIndex = cardValues.reduce(0,|) >> 16
+        let rank = flushes[handIndex]
+        return HandRank(rank:rank)
+    }
+}

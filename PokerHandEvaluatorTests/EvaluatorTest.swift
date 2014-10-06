@@ -20,3 +20,9 @@ class DeckTest:XCTestCase {
 
     }
 }
+
+class EvaluatorTest:XCTestCase {
+    func testEvaluateStraightFlush() {
+        assert(HandRank(rank:1) == Evaluator().evaluate(["T♣", "J♣", "Q♣", "K♣", "A♣"]))
+}
+}
