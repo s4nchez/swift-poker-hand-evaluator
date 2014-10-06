@@ -1,0 +1,368 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B468D2E19E2851A00E92B5B /* Evaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B468D2D19E2851A00E92B5B /* Evaluator.swift */; };
+		2B468D2F19E2851A00E92B5B /* Evaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B468D2D19E2851A00E92B5B /* Evaluator.swift */; };
+		2B468D3219E2856300E92B5B /* EvaluatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B468D3019E2856300E92B5B /* EvaluatorTest.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2B468D1219E284D700E92B5B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2B468D1419E284D700E92B5B /* libPokerHandEvaluator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPokerHandEvaluator.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B468D1F19E284D700E92B5B /* PokerHandEvaluatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokerHandEvaluatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B468D2219E284D700E92B5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B468D2B19E2851A00E92B5B /* PokerHandEvaluator-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PokerHandEvaluator-Bridging-Header.h"; sourceTree = "<group>"; };
+		2B468D2C19E2851A00E92B5B /* PokerHandEvaluatorTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PokerHandEvaluatorTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		2B468D2D19E2851A00E92B5B /* Evaluator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Evaluator.swift; sourceTree = "<group>"; };
+		2B468D3019E2856300E92B5B /* EvaluatorTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EvaluatorTest.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B468D1119E284D700E92B5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B468D1C19E284D700E92B5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B468D0B19E284D700E92B5B = {
+			isa = PBXGroup;
+			children = (
+				2B468D1619E284D700E92B5B /* PokerHandEvaluator */,
+				2B468D2019E284D700E92B5B /* PokerHandEvaluatorTests */,
+				2B468D1519E284D700E92B5B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2B468D1519E284D700E92B5B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B468D1419E284D700E92B5B /* libPokerHandEvaluator.a */,
+				2B468D1F19E284D700E92B5B /* PokerHandEvaluatorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2B468D1619E284D700E92B5B /* PokerHandEvaluator */ = {
+			isa = PBXGroup;
+			children = (
+				2B468D2D19E2851A00E92B5B /* Evaluator.swift */,
+				2B468D2B19E2851A00E92B5B /* PokerHandEvaluator-Bridging-Header.h */,
+				2B468D2C19E2851A00E92B5B /* PokerHandEvaluatorTests-Bridging-Header.h */,
+			);
+			path = PokerHandEvaluator;
+			sourceTree = "<group>";
+		};
+		2B468D2019E284D700E92B5B /* PokerHandEvaluatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				2B468D2119E284D700E92B5B /* Supporting Files */,
+				2B468D3019E2856300E92B5B /* EvaluatorTest.swift */,
+			);
+			path = PokerHandEvaluatorTests;
+			sourceTree = "<group>";
+		};
+		2B468D2119E284D700E92B5B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2B468D2219E284D700E92B5B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2B468D1319E284D700E92B5B /* PokerHandEvaluator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B468D2519E284D700E92B5B /* Build configuration list for PBXNativeTarget "PokerHandEvaluator" */;
+			buildPhases = (
+				2B468D1019E284D700E92B5B /* Sources */,
+				2B468D1119E284D700E92B5B /* Frameworks */,
+				2B468D1219E284D700E92B5B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PokerHandEvaluator;
+			productName = PokerHandEvaluator;
+			productReference = 2B468D1419E284D700E92B5B /* libPokerHandEvaluator.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		2B468D1E19E284D700E92B5B /* PokerHandEvaluatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B468D2819E284D700E92B5B /* Build configuration list for PBXNativeTarget "PokerHandEvaluatorTests" */;
+			buildPhases = (
+				2B468D1B19E284D700E92B5B /* Sources */,
+				2B468D1C19E284D700E92B5B /* Frameworks */,
+				2B468D1D19E284D700E92B5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PokerHandEvaluatorTests;
+			productName = PokerHandEvaluatorTests;
+			productReference = 2B468D1F19E284D700E92B5B /* PokerHandEvaluatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2B468D0C19E284D700E92B5B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Gourame Limited";
+				TargetAttributes = {
+					2B468D1319E284D700E92B5B = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					2B468D1E19E284D700E92B5B = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 2B468D0F19E284D700E92B5B /* Build configuration list for PBXProject "PokerHandEvaluator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2B468D0B19E284D700E92B5B;
+			productRefGroup = 2B468D1519E284D700E92B5B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2B468D1319E284D700E92B5B /* PokerHandEvaluator */,
+				2B468D1E19E284D700E92B5B /* PokerHandEvaluatorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2B468D1D19E284D700E92B5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B468D1019E284D700E92B5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B468D2E19E2851A00E92B5B /* Evaluator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B468D1B19E284D700E92B5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B468D2F19E2851A00E92B5B /* Evaluator.swift in Sources */,
+				2B468D3219E2856300E92B5B /* EvaluatorTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2B468D2319E284D700E92B5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2B468D2419E284D700E92B5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2B468D2619E284D700E92B5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "PokerHandEvaluator/PokerHandEvaluator-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2B468D2719E284D700E92B5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "PokerHandEvaluator/PokerHandEvaluator-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		2B468D2919E284D700E92B5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PokerHandEvaluatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PokerHandEvaluator/PokerHandEvaluatorTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2B468D2A19E284D700E92B5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PokerHandEvaluatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PokerHandEvaluator/PokerHandEvaluatorTests-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2B468D0F19E284D700E92B5B /* Build configuration list for PBXProject "PokerHandEvaluator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B468D2319E284D700E92B5B /* Debug */,
+				2B468D2419E284D700E92B5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B468D2519E284D700E92B5B /* Build configuration list for PBXNativeTarget "PokerHandEvaluator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B468D2619E284D700E92B5B /* Debug */,
+				2B468D2719E284D700E92B5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2B468D2819E284D700E92B5B /* Build configuration list for PBXNativeTarget "PokerHandEvaluatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B468D2919E284D700E92B5B /* Debug */,
+				2B468D2A19E284D700E92B5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2B468D0C19E284D700E92B5B /* Project object */;
+}
