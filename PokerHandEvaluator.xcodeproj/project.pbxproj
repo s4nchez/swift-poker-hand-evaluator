@@ -39,6 +39,7 @@
 		2B468D3A19E2AA0900E92B5B /* PokerHandEvaluator-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PokerHandEvaluator-Bridging-Header.h"; sourceTree = "<group>"; };
 		2B468D3B19E2AA0900E92B5B /* PokerHandEvaluatorTests-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PokerHandEvaluatorTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		2B5974D219E2F9A70088F477 /* Lookups.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lookups.swift; sourceTree = "<group>"; };
+		2BC8BC4819E424A200EF649C /* EvaluatorPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = EvaluatorPlayground.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +63,7 @@
 		2B468D0B19E284D700E92B5B = {
 			isa = PBXGroup;
 			children = (
+				2BC8BC4819E424A200EF649C /* EvaluatorPlayground.playground */,
 				2B468D1619E284D700E92B5B /* PokerHandEvaluator */,
 				2B468D2019E284D700E92B5B /* PokerHandEvaluatorTests */,
 				2B468D1519E284D700E92B5B /* Products */,

@@ -21,8 +21,32 @@ class DeckTest:XCTestCase {
     }
 }
 
+class RankTest:XCTestCase {
+    func testResolveNamesBasedOnRank(){
+        assert(HandRank(rank:1).name == RankName.StraightFlush)
+        assert(HandRank(rank:10).name == RankName.StraightFlush)
+        assert(HandRank(rank:11).name == RankName.FourOfAKind)
+        assert(HandRank(rank:166).name == RankName.FourOfAKind)
+        assert(HandRank(rank:167).name == RankName.FullHouse)
+        assert(HandRank(rank:322).name == RankName.FullHouse)
+        assert(HandRank(rank:323).name == RankName.Flush)
+        assert(HandRank(rank:1599).name == RankName.Flush)
+        assert(HandRank(rank:1600).name == RankName.Straight)
+        assert(HandRank(rank:1609).name == RankName.Straight)
+        assert(HandRank(rank:1610).name == RankName.ThreeOfAKind)
+        assert(HandRank(rank:2467).name == RankName.ThreeOfAKind)
+        assert(HandRank(rank:2468).name == RankName.TwoPairs)
+        assert(HandRank(rank:3325).name == RankName.TwoPairs)
+        assert(HandRank(rank:3326).name == RankName.OnePair)
+        assert(HandRank(rank:6185).name == RankName.OnePair)
+        assert(HandRank(rank:6186).name == RankName.HighCard)
+        assert(HandRank(rank:7462).name == RankName.HighCard)
+    }
+}
+
 class EvaluatorTest:XCTestCase {
     func testEvaluateStraightFlush() {
         assert(HandRank(rank:1) == Evaluator().evaluate(["T♣", "J♣", "Q♣", "K♣", "A♣"]))
+        assert(HandRank(rank:10) == Evaluator().evaluate([ "A♣", "2♣", "3♣", "4♣", "5♣"]))
 }
 }

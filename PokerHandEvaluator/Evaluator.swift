@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Deck {
+public class Deck {
     var cards:[String:Int]
     var count: Int {
         get {
@@ -68,7 +68,7 @@ class Deck {
 enum RankName{
     case HighCard
     case OnePair
-    case TwoPair
+    case TwoPairs
     case ThreeOfAKind
     case Straight
     case Flush
@@ -77,14 +77,25 @@ enum RankName{
     case StraightFlush
 }
 
-private enum RankHighest{}
+private var rankStarts:[Int:RankName] = [
+    7462: RankName.HighCard,
+    6185: RankName.OnePair,
+    3325: RankName.TwoPairs,
+    2467: RankName.ThreeOfAKind,
+    1609: RankName.Straight,
+    1599: RankName.Flush,
+    322: RankName.FullHouse,
+    166: RankName.FourOfAKind,
+    10: RankName.StraightFlush
+]
 
 class HandRank: Equatable {
     var rank:Int
     var name:RankName
     init(rank:Int) {
         self.rank = rank
-        self.name = RankName.StraightFlush
+        let start = rankStarts.keys.filter {$0 >= rank}.array.sorted { $0 < $1 }.first!
+        self.name = rankStarts[start]!
     }
 }
 
