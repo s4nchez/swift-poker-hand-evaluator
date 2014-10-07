@@ -50,19 +50,44 @@ class EvaluatorTest:XCTestCase {
         assert(HandRank(rank:10) == Evaluator().evaluate(["A♣", "2♣", "3♣", "4♣", "5♣"]))
     }**/
     
+    func testEvaluateFourOfAKind() {
+        assert(HandRank(rank:11) == Evaluator().evaluate(["K♣", "A♣", "A♥", "A♦", "A♣"]))
+        assert(HandRank(rank:166) == Evaluator().evaluate(["3♣", "2♣", "2♥", "2♦", "2♣"]))
+    }
+
+    func testEvaluateFullHouse() {
+        assert(HandRank(rank:167) == Evaluator().evaluate(["K♣", "K♥", "A♥", "A♦", "A♣"]))
+        assert(HandRank(rank:322) == Evaluator().evaluate(["3♣", "3♥", "2♥", "2♦", "2♣"]))
+    }
+
+    /**func testEvaluateFlush() {
+        assert(HandRank(rank:323) == Evaluator().evaluate(["9♣", "J♣", "Q♣", "K♣", "A♣"]))
+        assert(HandRank(rank:1599) == Evaluator().evaluate(["2♣", "3♣", "4♣", "5♣", "7♣"]))
+    }**/
+
     func testEvaluateStraight() {
         assert(HandRank(rank:1600) == Evaluator().evaluate(["T♣", "J♣", "Q♦", "K♥", "A♣"]))
         assert(HandRank(rank:1609) == Evaluator().evaluate(["A♣", "2♣", "3♦", "4♥", "5♣"]))
     }
 
+    func testEvaluateThreeOfAKind() {
+        assert(HandRank(rank:1610) == Evaluator().evaluate(["Q♣", "K♥", "A♥", "A♦", "A♣"]))
+        assert(HandRank(rank:2467) == Evaluator().evaluate(["4♣", "3♥", "2♥", "2♦", "2♣"]))
+    }
+
+    func testEvaluateTwoPairs() {
+        assert(HandRank(rank:2468) == Evaluator().evaluate(["Q♣", "K♣", "K♦", "A♥", "A♣"]))
+        assert(HandRank(rank:3325) == Evaluator().evaluate(["4♣", "3♣", "3♦", "2♥", "2♣"]))
+    }
+
+    func testEvaluateOnePair() {
+        assert(HandRank(rank:3326) == Evaluator().evaluate(["J♣", "Q♦", "K♦", "A♥", "A♣"]))
+        assert(HandRank(rank:6185) == Evaluator().evaluate(["2♣", "2♦", "3♦", "4♥", "5♣"]))
+    }
+
     func testEvaluateHighCard() {
         assert(HandRank(rank:6186) == Evaluator().evaluate(["9♣", "J♦", "Q♦", "K♥", "A♣"]))
         assert(HandRank(rank:7462) == Evaluator().evaluate(["2♣", "3♦", "4♦", "5♥", "7♣"]))
-    }
-
-    func testEvaluateFourOfAKind() {
-        assert(HandRank(rank:11) == Evaluator().evaluate(["K♣", "A♣", "A♥", "A♦", "A♣"]))
-        assert(HandRank(rank:166) == Evaluator().evaluate(["3♣", "2♣", "2♥", "2♦", "2♣"]))
     }
 
 }
