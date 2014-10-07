@@ -45,8 +45,24 @@ class RankTest:XCTestCase {
 }
 
 class EvaluatorTest:XCTestCase {
-    func testEvaluateStraightFlush() {
+    /**func testEvaluateStraightFlush() {
         assert(HandRank(rank:1) == Evaluator().evaluate(["T♣", "J♣", "Q♣", "K♣", "A♣"]))
-        assert(HandRank(rank:10) == Evaluator().evaluate([ "A♣", "2♣", "3♣", "4♣", "5♣"]))
-}
+        assert(HandRank(rank:10) == Evaluator().evaluate(["A♣", "2♣", "3♣", "4♣", "5♣"]))
+    }**/
+    
+    func testEvaluateStraight() {
+        assert(HandRank(rank:1600) == Evaluator().evaluate(["T♣", "J♣", "Q♦", "K♥", "A♣"]))
+        assert(HandRank(rank:1609) == Evaluator().evaluate(["A♣", "2♣", "3♦", "4♥", "5♣"]))
+    }
+
+    func testEvaluateHighCard() {
+        assert(HandRank(rank:6186) == Evaluator().evaluate(["9♣", "J♦", "Q♦", "K♥", "A♣"]))
+        assert(HandRank(rank:7462) == Evaluator().evaluate(["2♣", "3♦", "4♦", "5♥", "7♣"]))
+    }
+
+    func testEvaluateFourOfAKind() {
+        assert(HandRank(rank:11) == Evaluator().evaluate(["K♣", "A♣", "A♥", "A♦", "A♣"]))
+        assert(HandRank(rank:166) == Evaluator().evaluate(["3♣", "2♣", "2♥", "2♦", "2♣"]))
+    }
+
 }

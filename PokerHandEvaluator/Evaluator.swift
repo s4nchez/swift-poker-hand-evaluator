@@ -106,16 +106,38 @@ func == (lhs: HandRank, rhs: HandRank) -> Bool {
 class Evaluator {
     var deck = Deck()
     
-     enum Test {}
-
     func evaluate(cards:[String]) -> HandRank {
+        println("\(cards) - Starting Evaluation")
         let cardValues = cards.map {
             (var card) -> Int in
             return self.deck.as_binary(card)
         }
-        
         let handIndex = cardValues.reduce(0,|) >> 16
-        let rank = flushes[handIndex]
-        return HandRank(rank:rank)
+
+        let isFlush:Bool = (cardValues.reduce(0,&) & 0xF000) != 0
+
+        if isFlush {
+            println("\(cards) - IS FLUSH!")
+            return HandRank(rank:flushes[handIndex])
+        }
+
+        let unique5Candidate = uniqueToRanks[handIndex]
+
+        if (unique5Candidate != 0){
+            println("\(cards) - HAS 5 uniques")
+            return HandRank(rank:unique5Candidate)
+        }
+
+        println("\(cards) - is a generic hand")
+
+        let primes = cardValues.map {
+            (var card) -> Int in
+                return card & 0xFF
+        }
+        let primeProduct = primes.reduce(1, *)
+
+        let combination = find(primeProductToCombination, primeProduct)!
+
+        return HandRank(rank:combinationToRank[combination])
     }
 }
