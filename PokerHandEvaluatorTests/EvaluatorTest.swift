@@ -42,6 +42,10 @@ class RankTest:XCTestCase {
         assert(HandRank(rank:6186).name == RankName.HighCard)
         assert(HandRank(rank:7462).name == RankName.HighCard)
     }
+
+    func testPrint(){
+        println(HandRank(rank:1))
+    }
 }
 
 class EvaluatorTest:XCTestCase {

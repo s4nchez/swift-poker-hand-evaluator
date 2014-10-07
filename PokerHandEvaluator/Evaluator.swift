@@ -16,18 +16,6 @@ public class Deck {
         }
     }
     init(){
-        /*
-        Card representation as an integer, based on Kevin Suffecool's specs:
-        
-        +--------+--------+--------+--------+
-        |xxxbbbbb|bbbbbbbb|cdhsrrrr|xxpppppp|
-        +--------+--------+--------+--------+
-        
-        p = prime number of rank (deuce=2,trey=3,four=5,five=7,...,ace=41)
-        r = rank of card (deuce=0,trey=1,four=2,five=3,...,ace=12)
-        cdhs = suit of card
-        b = bit turned on depending on rank of card
-        */
         cards = [:]
         let suitDetails:[String: Int] = [
             "♠": 0b0001,
