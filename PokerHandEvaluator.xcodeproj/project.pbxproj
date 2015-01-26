@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		2B468D2E19E2851A00E92B5B /* Evaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B468D2D19E2851A00E92B5B /* Evaluator.swift */; };
 		2B468D2F19E2851A00E92B5B /* Evaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B468D2D19E2851A00E92B5B /* Evaluator.swift */; };
-		2B468D3C19E2AA0900E92B5B /* Evaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B468D3819E2AA0900E92B5B /* Evaluator.swift */; };
 		2B5974CF19E2F5180088F477 /* EvaluatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B468D3019E2856300E92B5B /* EvaluatorTest.swift */; };
 		2B5974D319E2F9A70088F477 /* Lookups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5974D219E2F9A70088F477 /* Lookups.swift */; };
 		2B5974D419E2FAA90088F477 /* Lookups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5974D219E2F9A70088F477 /* Lookups.swift */; };
@@ -161,7 +160,7 @@
 		2B468D0C19E284D700E92B5B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0600;
+				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Gourame Limited";
 				TargetAttributes = {
 					2B468D1319E284D700E92B5B = {
@@ -207,7 +206,6 @@
 			files = (
 				2B468D2E19E2851A00E92B5B /* Evaluator.swift in Sources */,
 				2B5974D319E2F9A70088F477 /* Lookups.swift in Sources */,
-				2B468D3C19E2AA0900E92B5B /* Evaluator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
