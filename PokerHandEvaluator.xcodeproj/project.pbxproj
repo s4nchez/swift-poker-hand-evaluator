@@ -160,6 +160,7 @@
 		2B468D0C19E284D700E92B5B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Gourame Limited";
 				TargetAttributes = {
